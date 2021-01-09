@@ -1,0 +1,13 @@
+#gallery{
+    padding: 40px;
+    background: #fff;
+}
+.img-content{
+ display:flex;
+}
+.cuisien-img img{
+    width: 100%;
+}
+.cuisien-img:hover{
+     background: linear-gradient(rgb(rgba(241, 161, 13)) rgb(rgb(255, 165, 0)));
+}

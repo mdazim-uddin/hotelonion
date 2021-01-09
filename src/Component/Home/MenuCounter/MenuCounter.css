@@ -1,0 +1,21 @@
+#numbers{
+    text-align: center;
+    background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)),
+     url('../../../image/9.jpeg') center/cover fixed no-repeat;
+    padding: 60px 0;
+    color:#fff;
+ }
+ .number p{
+    font-size: 30px;
+    font-weight: bold;
+}
+.number:hover{
+   color: orange;
+}
+.number-icon{
+    font-size: 60px;
+    margin: 20px 0;
+}
+.number-text h2{
+    text-transform: uppercase;
+}
