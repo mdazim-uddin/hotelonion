@@ -9,10 +9,6 @@ const [category , setCategory ] = useState("lunch") ;
 let foodFilter = foodData.filter(food =>{
     return food.category === category
 })
-
-
-
-
     return (
         <div>
              <div className="fod-btn">

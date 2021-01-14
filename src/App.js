@@ -18,10 +18,13 @@ import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
 import AddCart from './Component/AddCart/AddCart';
 
 export const UserContext = createContext()
+
 function App() {
-  const [loggedInUser,setLoggedInUser]=useState({})
+  const [cart , setCart] = useState([])
+  console.log(cart)
+  const [loggedInUser,setLoggedInUser ]=useState({})
   return (
-    <UserContext.Provider value={[loggedInUser , setLoggedInUser]}>
+    <UserContext.Provider value={{auth : [loggedInUser , setLoggedInUser], data : [cart,setCart]}}>
    <Router>
       <Navbar/>
      <Switch>
@@ -31,9 +34,11 @@ function App() {
       <Route path="/food/:Id">
         <FoodDetail/>
       </Route>
-      <PrivateRoute path="/cart">
+     
+      < PrivateRoute path="/cart">
         <AddCart/>
-      </PrivateRoute>
+      </ PrivateRoute>
+     
       <Route path="/login">
         <Login/>
       </Route>
